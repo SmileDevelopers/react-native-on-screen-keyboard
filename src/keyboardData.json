@@ -29,7 +29,10 @@
     },
     {
       "text": "0"
-    }
+    },
+	{
+	  "text": "$"
+	}
   ],
   [
     {
@@ -61,6 +64,10 @@
     },
     {
       "text": "p"
+    },
+	{
+      "image": "backspace",
+      "text": "backspace",
     }
   ],
   [
@@ -91,15 +98,18 @@
     {
       "text": "l"
     },
+	{
+      "text": "ñ"
+    },
     {
-      "text": "-"
+	  "image": "enter",
+      "text": "\n",
     }
   ],
   [
     {
       "image": "shift",
       "text": "shift",
-      "width": 2
     },
     {
       "text": "z"
@@ -123,8 +133,15 @@
       "text": "m"
     },
     {
-      "text": "_"
-    }
+      "text": "!"
+    },
+	{
+      "text": "?"
+    },
+	{
+      "image": "shift",
+      "text": "shift",
+    },	
   ],
   [
     {
@@ -161,40 +178,42 @@
     {
       "image": "backspace",
       "text": "backspace",
-      "width": 3
     }
   ],
   [
     {
-      "text": "`"
-    },
-    {
-      "text": "~"
-    },
-    {
-      "text": "!"
-    },
-    {
-      "text": "@"
+      "text": "\""
     },
     {
       "text": "#"
     },
     {
-      "text": "$"
-    },
-    {
       "text": "%"
     },
-    {
-      "text": "^"
-    },
-    {
+	{
       "text": "&"
     },
-    {
+	{
+      "text": "("
+    },
+	{
+      "text": ")"
+    },
+	{
+      "text": "-"
+    },
+	{
+      "text": "_"
+    },
+	{
+      "text": ":"
+    },
+	{
+      "text": "+"
+    },
+	{
       "text": "*"
-    }
+    },
   ],
   [
     {
@@ -252,55 +271,63 @@
   ],
   [
     {
-      "text": "!#$",
+      "text": "?123",
       "width": 2
     },
-    {
-      "text": "àáâ",
-      "width": 2
-    },
+	{
+	  "text":","
+	},
     {
       "image": "spacebar",
-      "text": "spacebar",
-      "width": 3
+      "text": " ",
+      "width": 4
     },
-    {
-      "image": "backspace",
-      "text": "backspace",
-      "width": 3
+	{
+	  "text":"."
+	},
+	{
+      "text": "@"
+    },
+	{
+      "text": "?123",
+      "width": 2
     }
   ],
   [
-    {
-      "text": "("
+	{
+      "image": "shift",
+      "text": "shift",
     },
     {
-      "text": ")"
+      "text": "á"
     },
-    {
-      "text": "-"
+	{
+      "text": "é"
     },
-    {
-      "text": "_"
+	{
+      "text": "í"
     },
-    {
-      "text": "="
+	{
+      "text": "ó"
     },
-    {
-      "text": "+"
+	{
+      "text": "ú"
     },
-    {
-      "text": "["
+	{
+      "text": "¡"
     },
-    {
-      "text": "]"
+	{
+      "text": "!"
     },
-    {
-      "text": "{"
+	{
+      "text": "¿"
     },
-    {
-      "text": "}"
-    }
+	{
+      "text": "?"
+    },
+	{
+      "text": "/"
+    },
   ],
   [
     {
@@ -348,22 +375,22 @@
       "text": "¿"
     },
     {
-      "text": "ᵃ"
+      "text": "á"
     },
     {
-      "text": "°"
+      "text": "é"
     },
     {
-      "text": "¢"
+      "text": "í"
     },
     {
-      "text": "€"
+      "text": "ó"
     },
     {
-      "text": "£"
+      "text": "ú"
     },
-    {
-      "text": "¥"
+	{
+      "text": "ü"
     }
   ],
   [
@@ -465,13 +492,12 @@
   [
     {
       "image":"spacebar",
-      "text":"spacebar",
+      "text":" ",
       "width":3
     },
     {
       "image":"backspace",
       "text":"backspace",
-      "width":3
     }
   ],
   [
@@ -593,5 +619,37 @@
     {
       "text":"0"
     }
+  ],
+  [
+	{
+      "text":"á"
+    },
+	{
+      "text":"é"
+    },
+	{
+      "text":"í"
+    },
+	{
+      "text":"ó"
+    },
+	{
+      "text":"ú"
+    },
+	{
+      "text": "\""
+    },
+	{
+      "text": "¿"
+    },
+	{
+      "text": "?"
+    },
+	{
+      "text": ":"
+    },
+	{
+      "text": ","
+    }
   ]
-]
+ ]

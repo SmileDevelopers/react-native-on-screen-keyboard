@@ -17,12 +17,21 @@ class Keyboard extends Component<Props> {
   constructor(props) {
     super(props);
     this.allIndices = {
+      // emailNormalIndices: [0, 1, 2, 3, 4, 5],
+      // emailSpecialIndices: [0, 6, 7, 8, 4, 5],
+      // passswordNormalIndices: [0, 1, 2, 3, 9],
+      // passswordSpecialIndices: [6, 10, 11, 12, 9],
+      // passswordAccentIndices: [0, 13, 14, 15, 9],
+      // searchIndices: [16, 17, 18, 19, 20, 21, 22]
       emailNormalIndices: [0, 1, 2, 3, 4, 5],
       emailSpecialIndices: [0, 6, 7, 8, 4, 5],
-      passswordNormalIndices: [0, 1, 2, 3, 9],
-      passswordSpecialIndices: [6, 10, 11, 12, 9],
-      passswordAccentIndices: [0, 13, 14, 15, 9],
-      searchIndices: [16, 17, 18, 19, 20, 21, 22]
+      searchIndices: [16, 17, 18, 19, 20, 21, 22],
+
+      passswordNormalIndices: [1, 2, 3, 9],
+      passswordAccentIndices: [6, 10, 11, 12, 9],
+      passswordSpecialIndices: [0, 6, 10, 9],
+
+
     };
     let initialIndices = {
       textEmailAddress: this.allIndices.emailNormalIndices,
@@ -58,7 +67,7 @@ class Keyboard extends Component<Props> {
       case "shift":
         this.setState({ isCaps: !isCaps });
         break;
-      case "!#$":
+      case "?123":
         this.setState({
           isSpecial: true,
           isAccent: false,
@@ -128,10 +137,10 @@ class Keyboard extends Component<Props> {
             }}
             key={index}
           >
-            {keyboardData[index].map(char => {
+            {keyboardData[index].map((char,i) => {
               let text = char.text;
-              if (!isSpecial && !isAccent && text === "abc") text = "!#$";
-              if (isSpecial && !isAccent && text === "!#$") text = "abc";
+              if (!isSpecial && !isAccent && text === "abc") text = "?123";
+              if (isSpecial && !isAccent && text === "?123") text = "abc";
               if (!isAccent && !isSpecial && text === "abc") text = "àáâ";
               if (isAccent && !isSpecial && text === "àáâ") text = "abc";
               return (
@@ -141,7 +150,7 @@ class Keyboard extends Component<Props> {
                   text={text}
                   isCaps={isCaps}
                   onPress={() => this.onPress(text)}
-                  key={text}
+                  key={i}
                   keyboardButtonContainerStyle={keyboardButtonContainerStyle}
                   keyboardButtonTextStyle={keyboardButtonTextStyle}
                   keyboardButtonTextPressStyle={keyboardButtonTextPressStyle}
@@ -161,7 +170,7 @@ class Keyboard extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-    paddingTop: 5,
+    // paddingTop: 5,
     borderWidth: 2,
     borderRadius: 1,
     borderColor: "white",

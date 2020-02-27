@@ -1,5 +1,5 @@
 {
-  "name": "@junctiontv/react-native-on-screen-keyboard",
+  "name": "smiledev-react-native-on-screen-keyboard",
   "version": "1.0.5",
   "description": "On Screen Keyboard for React Native",
   "main": "src/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JunctionTV/react-native-on-screen-keyboard.git"
+    "url": "git+https://github.com/SmileDevelopers/react-native-on-screen-keyboard.git"
   },
   "keywords": [
     "react",
@@ -20,9 +20,9 @@
   "author": "Mohammed Khateeb Kamran",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JunctionTV/react-native-on-screen-keyboard/issues"
+    "url": "https://github.com/SmileDevelopers/react-native-on-screen-keyboard/issues"
   },
-  "homepage": "https://github.com/JunctionTV/react-native-on-screen-keyboard#readme",
+  "homepage": "https://github.com/SmileDevelopers/react-native-on-screen-keyboard#readme",
   "peerDependencies": {
     "react": "^16.7.0",
     "react-native": "0.58.0"

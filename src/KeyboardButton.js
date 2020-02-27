@@ -22,7 +22,8 @@ class KeyboardButton extends Component<Props> {
     this.images = {
       backspace: require("./backspace.png"),
       shift: require("./shift.png"),
-      spacebar: require("./spacebar.png")
+      spacebar: require("./spacebar.png"),
+      enter:require("./enter.png")
     };
   }
 
@@ -88,12 +89,11 @@ class KeyboardButton extends Component<Props> {
           onPress={this.onPress}
           onBlur={this.onBlur}
           onFocus={this.onFocus}
-          disabled={true}
-          activeOpacity={1}
+          // activeOpacity={1}
         >
           {this.props.image ? (
             <Image
-              style={{ marginLeft: 13 }}
+              // style={{ marginLeft: 13 }}
               resizeMode="center"
               tintColor={tintColor}
               source={this.images[this.props.image]}
