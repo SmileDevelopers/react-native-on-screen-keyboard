@@ -1,6 +1,6 @@
 {
   "name": "smiledev-react-native-on-screen-keyboard",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "On Screen Keyboard for React Native",
   "main": "src/index.js",
   "scripts": {
