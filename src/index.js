@@ -26,12 +26,9 @@ class Keyboard extends Component<Props> {
       emailNormalIndices: [0, 1, 2, 3, 4, 5],
       emailSpecialIndices: [0, 6, 7, 8, 4, 5],
       searchIndices: [16, 17, 18, 19, 20, 21, 22],
-
       passswordNormalIndices: [1, 2, 3, 9],
       passswordAccentIndices: [6, 10, 11, 12, 9],
       passswordSpecialIndices: [0, 6, 10, 9],
-
-
     };
     let initialIndices = {
       textEmailAddress: this.allIndices.emailNormalIndices,
