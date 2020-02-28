@@ -63,7 +63,7 @@ class KeyboardButton extends Component<Props> {
         newStyle = { width: styles.container.width * 3.1};
     else if (this.props.width === 4)
       if (keyboardButtonWidthMultiplier && keyboardButtonWidthMultiplier["4"])
-        newStyle = { width: styles.container.width * keyboardButtonWidthMultiplier["4"] };
+        newStyle = { width: keyboardButtonWidthMultiplier["4"] };
       else
         newStyle = { width: styles.container.width * 4.15};
     let tintColor;
